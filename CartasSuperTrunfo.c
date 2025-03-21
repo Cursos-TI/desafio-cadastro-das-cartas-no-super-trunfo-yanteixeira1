@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main (){
-
+    
     //Cadastro da Primeira Cidade
     char estado1[100];
     char codigodacarda1[20];
@@ -57,15 +57,7 @@ int main (){
 
     printf ("\nCartas cadastradas: \n");
 
-    printf ("\nPrimeira Carta: /n");
-    printf ("Codigo da Carta: %s\n", codigodacarda1);
-    printf ("Nomde da Cidade: %s\n", nomedacidade1);
-    printf ("Nome do Estado: %s\n", estado1);
-    printf ("População da Cidade: %d\n", populacao1);
-    printf ("Area em km²: %f\n", areakm1);
-    printf ("PIB R$: %f\n", pib1);
-    printf ("Quantidade de Pontos Turisiticos: %d\n", pontosturisticos1);
-printf ("\nPrimeira Carta: /n");
+    printf ("\nPrimeira Carta: \n");
     printf ("Codigo da Carta: %s\n", codigodacarda1);
     printf ("Nomde da Cidade: %s\n", nomedacidade1);
     printf ("Nome do Estado: %s\n", estado1);
@@ -74,7 +66,7 @@ printf ("\nPrimeira Carta: /n");
     printf ("PIB R$: %f\n", pib1);
     printf ("Quantidade de Pontos Turisiticos: %d\n", pontosturisticos1);
 
-    printf ("\nSegunda Carta: /n");
+    printf ("\nSegunda Carta: \n");
     printf ("Codigo da Carta: %s\n", codigodacarda2);
     printf ("Nomde da Cidade: %s\n", nomedacidade2);
     printf ("Nome do Estado: %s\n", estado2);
