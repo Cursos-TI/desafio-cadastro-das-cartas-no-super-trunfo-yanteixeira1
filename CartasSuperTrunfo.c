@@ -45,9 +45,9 @@ int main (){
     scanf ("%s", &codigodacarda2);
     getchar ();
     printf ("Nome da Cidade: ");
-    scanf ("%s", &nomedacidade2);
     fgets (nomedacidade2, 100, stdin);
     nomedacidade2 [strcspn (nomedacidade2, "\n")] = 0;
+    printf ("Nome do Estado: ");
     scanf ("%s", &estado2);
     printf ("População: ");
     scanf ("%d", &populacao2);
