@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main (){
     
@@ -14,8 +15,10 @@ int main (){
     printf ("Cadastro da Primeira Cidade: \n");
     printf ("Codigo da Carta: ");
     scanf ("%s", &codigodacarda1);
+    getchar ();
     printf ("Nome da Cidade: ");
-    scanf ("%s", nomedacidade1);
+    fgets (nomedacidade1, 100, stdin);
+    nomedacidade1 [strcspn (nomedacidade1, "\n")] = 0;
     printf ("Nome do Estado: ");
     scanf ("%s", estado1);
     printf ("População: ");
@@ -40,9 +43,11 @@ int main (){
     printf ("\nCadastro da Segunda Carta: \n");
     printf ("Codigo da Carta: ");
     scanf ("%s", &codigodacarda2);
+    getchar ();
     printf ("Nome da Cidade: ");
     scanf ("%s", &nomedacidade2);
-    printf ("Nome do Estado: ");
+    fgets (nomedacidade2, 100, stdin);
+    nomedacidade2 [strcspn (nomedacidade2, "\n")] = 0;
     scanf ("%s", &estado2);
     printf ("População: ");
     scanf ("%d", &populacao2);
@@ -62,8 +67,8 @@ int main (){
     printf ("Nomde da Cidade: %s\n", nomedacidade1);
     printf ("Nome do Estado: %s\n", estado1);
     printf ("População da Cidade: %d\n", populacao1);
-    printf ("Area em km²: %f\n", areakm1);
-    printf ("PIB R$: %f\n", pib1);
+    printf ("Area em km²: %.2f\n", areakm1);
+    printf ("PIB R$: %.2f\n", pib1);
     printf ("Quantidade de Pontos Turisiticos: %d\n", pontosturisticos1);
 
     printf ("\nSegunda Carta: \n");
@@ -71,8 +76,8 @@ int main (){
     printf ("Nomde da Cidade: %s\n", nomedacidade2);
     printf ("Nome do Estado: %s\n", estado2);
     printf ("População da Cidade: %d\n", populacao2);
-    printf ("Area em km²: %f\n", areakm2);
-    printf ("PIB R$: %f\n", pib2);
+    printf ("Area em km²: %.2f\n", areakm2);
+    printf ("PIB R$: %.2f\n", pib2);
     printf ("Quantidade de Pontos Turisiticos: %d\n", pontosturisticos2);
 
     return 0;
