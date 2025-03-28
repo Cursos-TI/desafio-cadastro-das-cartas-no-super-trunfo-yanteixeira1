@@ -102,7 +102,10 @@ int main (){
      int pibpercapta;
      int superpoder;
 
-     
+     printf ("\n Comparação dos valores das cartas: \n")
+
+     populacao = populacao1 >= populacao2;
+     printf ("A população maior é: %d\n", populacao);
 
     return 0;
 }
