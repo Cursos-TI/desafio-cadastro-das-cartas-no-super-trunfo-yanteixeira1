@@ -93,5 +93,16 @@ int main (){
     printf ("Densidade Populacional: %.2f hab/km² \n", densidadepop2);
     printf ("PIB per Capita R$: %.2f \n", pibpercapita2);
 
+    //Comparação nos valores das cartas
+     int populacao;
+     int area;
+     int pib;
+     int pontostur;
+     int densidadepop;
+     int pibpercapta;
+     int superpoder;
+
+     
+
     return 0;
 }
