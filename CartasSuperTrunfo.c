@@ -117,6 +117,12 @@ int main (){
     pontostur = pontosturisticos1 >= pontosturisticos2;
     printf ("A cidade com maior pontos turísticos é: %d \n", pontostur);
     
+    densidadepop = densidadepop1 >= densidade pop2;
+    printf ("A densidade populacional e maior na cidade: %.2f \n", densidadepop;
+    
+    pibpercapta = pibpercapta1 >= pibpercapta2;
+    printf ("O PIBPERCAPTA e maior na cidade: %.2f \n", pibpercapta;
+    
 
     return 0;
 }
