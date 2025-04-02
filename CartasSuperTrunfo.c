@@ -102,10 +102,21 @@ int main (){
      int pibpercapta;
      int superpoder;
 
-     printf ("\n Comparação dos valores das cartas: \n")
+     printf ("\n Comparação dos valores das cartas: \n");
+    printf (" Quando o resultado for 0 Carta 01 e quando o valor for 1 Carta 02 \n");
 
      populacao = populacao1 >= populacao2;
      printf ("A população maior é: %d\n", populacao);
+    
+    area = areakm1 >= areakm2;
+    printf ("A área em km2 maior é: %.2f \n", area);
+    
+    pib = pib1 >= pib2;
+    printf ("O PIB maior é: %.2f \n", pib);
+    
+    pontostur = pontosturisticos1 >= pontosturisticos2;
+    printf ("A cidade com maior pontos turísticos é: %d \n", pontostur);
+    
 
     return 0;
 }
