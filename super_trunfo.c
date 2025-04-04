@@ -50,25 +50,27 @@ int main (){
     printf ("Quantidade de Pontos Turisticos: ");
     scanf ("%d", &pontosturisticos2);
 
-    //exibição das cartas cadastradas
+    //Calcular a densidade populacional e o pib per capita
+    float densidadepop1, pibpercapita1, densidadepop2, pibpercapita2;
 
-    printf ("\nCartas cadastradas: \n");
+    densidadepop1 = (float) populacao1 / areakm1;
+    pibpercapita1 = (float) (pib1 * 1000000000) / populacao1;
+    printf ("\n A densidade populacional da carta 1 é: %.2f hab/km² \n", densidadepop1);
+    printf ("O PIB per capita da carta 1 é: %.2f \n", pibpercapita1);
 
-    printf ("\nPrimeira Carta: \n");
-    printf ("Codigo da Carta: %s\n", codigodacarda1);
-    printf ("Nomde da Cidade: %s\n", nomedacidade1);
-    printf ("Nome do Estado: %s\n", estado1);
-    printf ("População da Cidade: %d\n", populacao1);
-    printf ("Area em km²: %.2f\n", areakm1);
-    printf ("PIB R$: %.2f\n", pib1);
-    printf ("Quantidade de Pontos Turisiticos: %d\n", pontosturisticos1);
+    densidadepop2 = (float) populacao2 / areakm2;
+    pibpercapita2 = (float) (pib2 * 1000000000) / populacao2;
+    printf ("\n A densidade populacional da carta 2 é: %.2f hab/km² \n", densidadepop2);
+    printf ("O PIB per capita da carta 2 é: %.2f \n", pibpercapita2);
 
+    //Calcular atributo
+    if (pibpercapita1 >= pibpercapita2) {
+    printf ("\n PIB per capita da cidade 1 e maior que o PIB per capita da cidade 2 \n");
+    } else {
+    printf (" PIB per capita da cidade 2 e  maior que o PIB per capita da cidade 1 \n");
+    }
 
-    printf ("\nSegunda Carta: \n");
-    printf ("Codigo da Carta: %s\n", codigodacarda2);
-    printf ("Nomde da Cidade: %s\n", nomedacidade2);
-    printf ("Nome do Estado: %s\n", estado2);
-    printf ("População da Cidade: %d\n", populacao2);
-    printf ("Area em km²: %.2f\n", areakm2);
-    printf ("PIB R$: %.2f\n", pib2);
-    printf ("Quantidade de Pontos Turisiticos: %d\n", pontosturisticos2)
+    //Determinar a carta vencedora
+
+    return (0);
+}
