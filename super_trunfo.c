@@ -205,8 +205,8 @@ int main (){
         case 6:
         printf ("\nCarta 01: %s (%s): %f\n", nomedacidade1, estado1, densidadepop1);
         printf ("Carta 02: %s (%s): %f\n", nomedacidade2, estado2, densidadepop2);
-        if (densidadepop1 > densidadepop2 || densidadepop1 < densidadepop2) {
-            if (densidadepop1 > densidadepop2){
+        if (densidadepop1 < densidadepop2 || densidadepop1 > densidadepop2) {
+            if (densidadepop1 < densidadepop2){
             printf ("Resultado: Carta 01 %s venceu\n", nomedacidade1);
             } else { 
             printf("Resultado: Carta 02 %s venceu\n", nomedacidade2);
