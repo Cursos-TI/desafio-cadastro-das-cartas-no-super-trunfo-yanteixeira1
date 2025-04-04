@@ -134,7 +134,7 @@ int main (){
 
         case 1:
             printf ("\nCarta 01: %s (%s): %d\n", nomedacidade1, estado1, populacao1);
-            printf ("\nCarta 02: %s (%s): %d\n", nomedacidade2, estado2, populacao2);
+            printf ("Carta 02: %s (%s): %d\n", nomedacidade2, estado2, populacao2);
             if (populacao1 > populacao2 || populacao1 < populacao2) {
                 if (populacao1 > populacao2){
                 printf ("Resultado: Carta 01 %s venceu\n", nomedacidade1);
@@ -145,8 +145,80 @@ int main (){
                 printf ("As duas cidades tem o mesma quantidade de numero de habitantes\n");
             }
             break;
+
+        case 2:
+        printf ("\nCarta 01: %s (%s): %d\n", nomedacidade1, estado1, pontosturisticos1);
+        printf ("Carta 02: %s (%s): %d\n", nomedacidade2, estado2, pontosturisticos2);
+        if (pontosturisticos1 > pontosturisticos2 || pontosturisticos1 < pontosturisticos2) {
+            if (pontosturisticos1 > pontosturisticos2){
+            printf ("Resultado: Carta 01 %s venceu\n", nomedacidade1);
+            } else { 
+            printf("Resultado: Carta 02 %s venceu\n", nomedacidade2);
+            }
+        } else {
+            printf ("As duas cidades tem o mesma quantidade de pontos turisticos\n");
+        }
+        break;
+        
+        case 3:
+        printf ("\nCarta 01: %s (%s): %d\n", nomedacidade1, estado1, areakm1);
+        printf ("Carta 02: %s (%s): %d\n", nomedacidade2, estado2, areakm2);
+        if (areakm1 > areakm2 || areakm1 < areakm2) {
+            if (pontosturisticos1 > pontosturisticos2){
+            printf ("Resultado: Carta 01 %s venceu\n", nomedacidade1);
+            } else { 
+            printf("Resultado: Carta 02 %s venceu\n", nomedacidade2);
+            }
+        } else {
+            printf ("As duas cidades tem o mesma quantidade de area em km²\n");
+        }
+        break;
+
+        case 4:
+        printf ("\nCarta 01: %s (%s): %d\n", nomedacidade1, estado1, pib1);
+        printf ("Carta 02: %s (%s): %d\n", nomedacidade2, estado2, pib2);
+        if (pib1 > pib2 || pib1 < pib2) {
+            if (pib1 > pib2){
+            printf ("Resultado: Carta 01 %s venceu\n", nomedacidade1);
+            } else { 
+            printf("Resultado: Carta 02 %s venceu\n", nomedacidade2);
+            }
+        } else {
+            printf ("As duas cidades tem o mesmo valor arrecadado de PIB\n");
+        }
+        break;
+
+        case 5:
+        printf ("\nCarta 01: %s (%s): %.2f\n", nomedacidade1, estado1, pibpercapita1);
+        printf ("Carta 02: %s (%s): %.2f\n", nomedacidade2, estado2, pibpercapita2);
+        if (pibpercapita1 > pibpercapita2 || pibpercapita1 < pibpercapita2) {
+            if (pibpercapita1 > pibpercapita2){
+            printf ("Resultado: Carta 01 %s venceu\n", nomedacidade1);
+            } else { 
+            printf("Resultado: Carta 02 %s venceu\n", nomedacidade2);
+            }
+        } else {
+            printf ("As duas cidades tem o mesmo valor de PIB per capita\n");
+        }
+        break;
+        
+        case 6:
+        printf ("\nCarta 01: %s (%s): %f\n", nomedacidade1, estado1, densidadepop1);
+        printf ("Carta 02: %s (%s): %f\n", nomedacidade2, estado2, densidadepop2);
+        if (densidadepop1 > densidadepop2 || densidadepop1 < densidadepop2) {
+            if (densidadepop1 > densidadepop2){
+            printf ("Resultado: Carta 01 %s venceu\n", nomedacidade1);
+            } else { 
+            printf("Resultado: Carta 02 %s venceu\n", nomedacidade2);
+            }
+        } else {
+            printf ("As duas cidades tem o mesmo valor de densidade populacional\n");
+        }
+        break;
+
         default:
+            printf ("Você escolheu uma opção inexistente\n");
             break;
-    };
+    }
     return (0);
 }
