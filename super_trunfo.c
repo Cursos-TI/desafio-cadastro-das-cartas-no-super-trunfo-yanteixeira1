@@ -74,45 +74,54 @@ int main (){
     if (populacao1 > populacao2) {
     printf ("\nNo atributo população a carta 1 venceu\n");
     } else {
-    printf ("No atributo população a carta 2 venceu \n");
+    printf ("\nNo atributo população a carta 2 venceu \n");
     }
 
     if (pontosturisticos1 > pontosturisticos2) {
         printf ("\nNo atributo pontos turisticos a carta 1 venceu\n");
         } else {
-        printf ("No atributo pontos turisticos a carta 2 venceu \n");
+        printf ("\nNo atributo pontos turisticos a carta 2 venceu \n");
     }
 
     if (areakm1 > areakm2) {
         printf ("\nNo atributo área em km² a carta 1 venceu\n");
         } else {
-        printf ("No atributo área em km² a carta 2 venceu \n");
+        printf ("\nNo atributo área em km² a carta 2 venceu \n");
     }
 
     if (pib1 > pib2) {
         printf ("\nNo atributo PIB a carta 1 venceu\n");
         } else {
-        printf ("No atributo PIB a carta 2 venceu \n");
+        printf ("\nNo atributo PIB a carta 2 venceu \n");
     }
     
     if (areakm1 > areakm2) {
         printf ("\nNo atributo área em km² a carta 1 venceu\n");
         } else {
-        printf ("No atributo área em km² a carta 2 venceu \n");
+        printf ("\nNo atributo área em km² a carta 2 venceu \n");
     }
     
     if (pibpercapita1 > pibpercapita2) {
         printf ("\nNo atributo PIB per capita a carta 1 venceu\n");
         } else {
-        printf ("No atributo PIB per capita a carta 2 venceu \n");
+        printf ("\nNo atributo PIB per capita a carta 2 venceu \n");
     }
 
     
     if (densidadepop1 < densidadepop2) {
         printf ("\n No atributo densidade populacional a carta 1 venceu\n");
         } else {
-        printf ("No atributo densidade populacional a carta 2 venceu \n");
+        printf ("\nNo atributo densidade populacional a carta 2 venceu \n");
     }
+
+    //Exibir o resultado da comparação
+    printf ("Carta 01: %s (%s): %d\n", nomedacidade1, estado1, populacao1);
+    printf ("Carta 02: %s (%s): %d\n", nomedacidade2, estado2, populacao2);
+    if (populacao1 > populacao2) {
+        printf ("Resultado: Carta 01 %s venceu\n", nomedacidade1);
+    } else { ("Resultado: Carta 02 %s venceu\n", nomedacidade2);
+    }
+
 
     return (0);
 }
