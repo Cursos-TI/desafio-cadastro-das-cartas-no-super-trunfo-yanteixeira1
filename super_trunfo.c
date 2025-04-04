@@ -55,22 +55,64 @@ int main (){
 
     densidadepop1 = (float) populacao1 / areakm1;
     pibpercapita1 = (float) (pib1 * 1000000000) / populacao1;
-    printf ("\n A densidade populacional da carta 1 é: %.2f hab/km² \n", densidadepop1);
+    printf ("\nA densidade populacional da carta 1 é: %.2f hab/km² \n", densidadepop1);
     printf ("O PIB per capita da carta 1 é: %.2f \n", pibpercapita1);
 
     densidadepop2 = (float) populacao2 / areakm2;
     pibpercapita2 = (float) (pib2 * 1000000000) / populacao2;
-    printf ("\n A densidade populacional da carta 2 é: %.2f hab/km² \n", densidadepop2);
+    printf ("\nA densidade populacional da carta 2 é: %.2f hab/km² \n", densidadepop2);
     printf ("O PIB per capita da carta 2 é: %.2f \n", pibpercapita2);
 
-    //Calcular atributo
-    if (pibpercapita1 >= pibpercapita2) {
-    printf ("\n PIB per capita da cidade 1 e maior que o PIB per capita da cidade 2 \n");
+    //Comparar um atributo escolhido
+    if (pibpercapita1 > pibpercapita2) {
+    printf ("\nPIB per capita da cidade 1 e maior que o PIB per capita da cidade 2 \n");
     } else {
     printf (" PIB per capita da cidade 2 e  maior que o PIB per capita da cidade 1 \n");
     }
 
     //Determinar a carta vencedora
+    if (populacao1 > populacao2) {
+    printf ("\nNo atributo população a carta 1 venceu\n");
+    } else {
+    printf ("No atributo população a carta 2 venceu \n");
+    }
+
+    if (pontosturisticos1 > pontosturisticos2) {
+        printf ("\nNo atributo pontos turisticos a carta 1 venceu\n");
+        } else {
+        printf ("No atributo pontos turisticos a carta 2 venceu \n");
+    }
+
+    if (areakm1 > areakm2) {
+        printf ("\nNo atributo área em km² a carta 1 venceu\n");
+        } else {
+        printf ("No atributo área em km² a carta 2 venceu \n");
+    }
+
+    if (pib1 > pib2) {
+        printf ("\nNo atributo PIB a carta 1 venceu\n");
+        } else {
+        printf ("No atributo PIB a carta 2 venceu \n");
+    }
+    
+    if (areakm1 > areakm2) {
+        printf ("\nNo atributo área em km² a carta 1 venceu\n");
+        } else {
+        printf ("No atributo área em km² a carta 2 venceu \n");
+    }
+    
+    if (pibpercapita1 > pibpercapita2) {
+        printf ("\nNo atributo PIB per capita a carta 1 venceu\n");
+        } else {
+        printf ("No atributo PIB per capita a carta 2 venceu \n");
+    }
+
+    
+    if (densidadepop1 < densidadepop2) {
+        printf ("\n No atributo densidade populacional a carta 1 venceu\n");
+        } else {
+        printf ("No atributo densidade populacional a carta 2 venceu \n");
+    }
 
     return (0);
 }
