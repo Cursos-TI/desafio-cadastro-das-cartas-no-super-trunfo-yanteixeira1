@@ -109,8 +109,8 @@ int main (){
     }
 
     //Exibir o resultado da comparação
-    printf ("Carta 01: %s (%s): %d\n", nomedacidade1, estado1, populacao1);
-    printf ("Carta 02: %s (%s): %d\n", nomedacidade2, estado2, populacao2);
+    printf ("\nCarta 01: %s (%s): %d\n", nomedacidade1, estado1, populacao1);
+    printf ("\nCarta 02: %s (%s): %d\n", nomedacidade2, estado2, populacao2);
     if (populacao1 > populacao2) {
         printf ("Resultado: Carta 01 %s venceu\n", nomedacidade1);
     } else { ("Resultado: Carta 02 %s venceu\n", nomedacidade2);
@@ -118,19 +118,32 @@ int main (){
     
     //Menu Interativo
     int escolhaopcao;
-    printf ("Qual atributo você quer comparar?\n");
-    printf ("1 - População");
-    printf ("2 - Pontos Turisticos");
-    printf ("3 - Área km²");
-    printf ("4 - PIB");
-    printf ("5 - PIB per capita");
-    printf ("6 - Densidade Populacional");
+    printf ("\nQual atributo você quer comparar?\n");
+    printf ("1 - População\n");
+    printf ("2 - Pontos Turisticos\n");
+    printf ("3 - Área km²\n");
+    printf ("4 - PIB\n");
+    printf ("5 - PIB per capita\n");
+    printf ("6 - Densidade Populacional\n");
     scanf ("%d", &escolhaopcao);
 
-    
+    //comparação dos atributos
+    switch (escolhaopcao)
 
+{
 
-
-
+    case 1:
+    printf ("\nCarta 01: %s (%s): %d\n", nomedacidade1, estado1, populacao1);
+    printf ("\nCarta 02: %s (%s): %d\n", nomedacidade2, estado2, populacao2);
+    if (populacao1 > populacao2 || populacao1 < populacao2) {
+    } else if (populacao1 > populacao2){
+        printf ("Resultado: Carta 01 %s venceu\n", nomedacidade1);
+    } else if (populacao1 < populacao2) { 
+        printf("Resultado: Carta 02 %s venceu\n", nomedacidade2);
+    } else if (populacao1 == populacao2) {
+        printf ("As duas cidades tem o mesma quantidade de numero de habitantes\n");
+    }
+break;
+}
     return (0);
 }
