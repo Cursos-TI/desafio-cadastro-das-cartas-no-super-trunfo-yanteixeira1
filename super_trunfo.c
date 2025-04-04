@@ -161,8 +161,8 @@ int main (){
         break;
         
         case 3:
-        printf ("\nCarta 01: %s (%s): %d\n", nomedacidade1, estado1, areakm1);
-        printf ("Carta 02: %s (%s): %d\n", nomedacidade2, estado2, areakm2);
+        printf ("\nCarta 01: %s (%s): %f\n", nomedacidade1, estado1, areakm1);
+        printf ("Carta 02: %s (%s): %f\n", nomedacidade2, estado2, areakm2);
         if (areakm1 > areakm2 || areakm1 < areakm2) {
             if (pontosturisticos1 > pontosturisticos2){
             printf ("Resultado: Carta 01 %s venceu\n", nomedacidade1);
@@ -175,8 +175,8 @@ int main (){
         break;
 
         case 4:
-        printf ("\nCarta 01: %s (%s): %d\n", nomedacidade1, estado1, pib1);
-        printf ("Carta 02: %s (%s): %d\n", nomedacidade2, estado2, pib2);
+        printf ("\nCarta 01: %s (%s): %f\n", nomedacidade1, estado1, pib1);
+        printf ("Carta 02: %s (%s): %f\n", nomedacidade2, estado2, pib2);
         if (pib1 > pib2 || pib1 < pib2) {
             if (pib1 > pib2){
             printf ("Resultado: Carta 01 %s venceu\n", nomedacidade1);
