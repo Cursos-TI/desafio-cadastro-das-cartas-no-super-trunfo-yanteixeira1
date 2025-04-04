@@ -93,6 +93,16 @@ int main (){
     printf ("Densidade Populacional: %.2f hab/km² \n", densidadepop2);
     printf ("PIB per Capita R$: %.2f \n", pibpercapita2);
 
+    //Calculo de Super Poder
+
+    float superpoder1 = (float) (populacao1 + areakm1 + pib1 + pontosturisticos1 + pibpercapita1 + (areakm1 / populacao1));
+    float superpoder2 = (float) (populacao2 + areakm2 + pib2 + pontosturisticos2 + pibpercapita2 + (areakm2 / populacao2));
+    
+    printf ("\n O super poder das cartas é: \n");
+
+    printf ("O super poder da carta 01 é: %.2f \n", superpoder1);
+    printf ("O super poder da carta 02 é: %.2f \n", superpoder2);
+
     //Comparação nos valores das cartas
      int populacao;
      int area;
@@ -102,27 +112,29 @@ int main (){
      int pibpercapta;
      int superpoder;
 
-     printf ("\n Comparação dos valores das cartas: \n");
-    printf (" Quando o resultado for 0 Carta 01 e quando o valor for 1 Carta 02 \n");
+    printf ("\n Comparação dos valores das cartas: \n");
+    printf ("\n Quando o resultado for 0 Carta 01 e quando o valor for 1 Carta 02 \n");
 
      populacao = populacao1 >= populacao2;
-     printf ("A população maior é: %d\n", populacao);
+     printf ("\n A população maior é: %d\n", populacao);
     
     area = areakm1 >= areakm2;
-    printf ("A área em km2 maior é: %.2f \n", area);
+    printf ("A área em km2 maior é: %d \n", area);
     
     pib = pib1 >= pib2;
-    printf ("O PIB maior é: %.2f \n", pib);
+    printf ("O PIB maior é: %d \n", pib);
     
     pontostur = pontosturisticos1 >= pontosturisticos2;
     printf ("A cidade com maior pontos turísticos é: %d \n", pontostur);
     
-    densidadepop = densidadepop1 >= densidade pop2;
-    printf ("A densidade populacional e maior na cidade: %.2f \n", densidadepop;
+    densidadepop = densidadepop1 >= densidadepop2;
+    printf ("A densidade populacional e maior na cidade: %d \n", densidadepop);
     
-    pibpercapta = pibpercapta1 >= pibpercapta2;
-    printf ("O PIBPERCAPTA e maior na cidade: %.2f \n", pibpercapta;
-    
+    pibpercapta = pibpercapita1 >= pibpercapita2;
+    printf ("O PIBPERCAPTA e maior na cidade: %d \n", pibpercapta);
+
+    superpoder = superpoder1 >= superpoder2;
+    printf ("O superpoder maior e na cidade: %d \n", superpoder);
 
     return 0;
 }
