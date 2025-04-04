@@ -95,12 +95,6 @@ int main (){
         printf ("\nNo atributo PIB a carta 2 venceu \n");
     }
     
-    if (areakm1 > areakm2) {
-        printf ("\nNo atributo área em km² a carta 1 venceu\n");
-        } else {
-        printf ("\nNo atributo área em km² a carta 2 venceu \n");
-    }
-    
     if (pibpercapita1 > pibpercapita2) {
         printf ("\nNo atributo PIB per capita a carta 1 venceu\n");
         } else {
@@ -121,6 +115,21 @@ int main (){
         printf ("Resultado: Carta 01 %s venceu\n", nomedacidade1);
     } else { ("Resultado: Carta 02 %s venceu\n", nomedacidade2);
     }
+    
+    //Menu Interativo
+    int escolhaopcao;
+    printf ("Qual atributo você quer comparar?\n");
+    printf ("1 - População");
+    printf ("2 - Pontos Turisticos");
+    printf ("3 - Área km²");
+    printf ("4 - PIB");
+    printf ("5 - PIB per capita");
+    printf ("6 - Densidade Populacional");
+    scanf ("%d", &escolhaopcao);
+
+    
+
+
 
 
     return (0);
