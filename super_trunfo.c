@@ -10,7 +10,7 @@ int main (){
 
     printf ("Cadastro da Primeira Cidade: \n");
     printf ("Codigo da Carta: ");
-    scanf ("%s", &codigodacarda1);
+    scanf ("%s", codigodacarda1);
     getchar ();
     printf ("Nome da Cidade: ");
     fgets (nomedacidade1, 100, stdin);
@@ -130,20 +130,23 @@ int main (){
     //comparação dos atributos
     switch (escolhaopcao)
 
-{
+    {   
 
-    case 1:
-    printf ("\nCarta 01: %s (%s): %d\n", nomedacidade1, estado1, populacao1);
-    printf ("\nCarta 02: %s (%s): %d\n", nomedacidade2, estado2, populacao2);
-    if (populacao1 > populacao2 || populacao1 < populacao2) {
-    } else if (populacao1 > populacao2){
-        printf ("Resultado: Carta 01 %s venceu\n", nomedacidade1);
-    } else if (populacao1 < populacao2) { 
-        printf("Resultado: Carta 02 %s venceu\n", nomedacidade2);
-    } else if (populacao1 == populacao2) {
-        printf ("As duas cidades tem o mesma quantidade de numero de habitantes\n");
-    }
-break;
-}
+        case 1:
+            printf ("\nCarta 01: %s (%s): %d\n", nomedacidade1, estado1, populacao1);
+            printf ("\nCarta 02: %s (%s): %d\n", nomedacidade2, estado2, populacao2);
+            if (populacao1 > populacao2 || populacao1 < populacao2) {
+                if (populacao1 > populacao2){
+                printf ("Resultado: Carta 01 %s venceu\n", nomedacidade1);
+                } else { 
+                printf("Resultado: Carta 02 %s venceu\n", nomedacidade2);
+                }
+            } else {
+                printf ("As duas cidades tem o mesma quantidade de numero de habitantes\n");
+            }
+            break;
+        default:
+            break;
+    };
     return (0);
 }
